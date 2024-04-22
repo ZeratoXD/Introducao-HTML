@@ -1,0 +1,36 @@
+/* Reset de Estilos para garantir consistência entre navegadores */
+* {
+    margin: 30;
+    padding: 30;
+    box-sizing: border-box;
+}
+
+/* Estilos para o header (imagem de capa) */
+header {
+    width: 100%;
+    height: 200px; /* Ajuste conforme necessário */
+    background-color: #a49f9f; /* Cor de fundo de fallback */
+    background-image: url('https://i.imgur.com/0NZUzDs.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para o vídeo */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 para o vídeo (altura/largura) */
+    width: 100%;
+    max-width: 800px; /* Largura máxima do vídeo */
+    margin: 0 auto; /* Centralizar o vídeo horizontalmente */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
